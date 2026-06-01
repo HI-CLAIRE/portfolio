@@ -113,3 +113,8 @@ body {
   background: rgba(168, 85, 247, 0.3);
   color: inherit;
 }
+
+/* Skills: monochrome icons (Next.js, GitHub, Nx) — black in light, white in dark */
+[data-theme="dark"] .skill-icon-adaptive {
+  filter: brightness(0) invert(1);
+}

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Frontend Developer",
+  title: "Claire Kim | Frontend Developer",
   description:
     "3년차 프론트엔드 개발자 포트폴리오 — React, TypeScript, Next.js를 주력으로 사용자 경험을 만드는 개발자입니다.",
   openGraph: {

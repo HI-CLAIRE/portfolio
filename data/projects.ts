@@ -1,6 +1,11 @@
 export type Visibility = "public" | "private";
 export type Role = "new" | "maintenance" | "redesign";
 
+export interface LiveLink {
+  label: string;
+  url: string;
+}
+
 export interface Project {
   id: string;
   period: string;
@@ -8,91 +13,170 @@ export interface Project {
   role: Role;
   visibility: Visibility;
   liveUrl?: string;
+  liveLinks?: LiveLink[];
   imageUrl?: string;
   status?: "ongoing";
 }
 
 export const projects: Project[] = [
+  // 1. 다중 시스템 연동·국제화·멤버십 런칭 — 비즈니스 임팩트 최대
   {
-    id: "daesungpappy",
-    period: "2023.11 — 2024.09",
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    role: "new",
-    visibility: "public",
-    liveUrl: "https://example.com", // TODO: 실제 배포 URL로 교체
-  },
-  {
-    id: "minigame",
-    period: "2024.10 — 2025.01",
-    techStack: ["JavaScript", "HTML5 Canvas"], // TODO: 실제 기술스택으로 교체
-    role: "new",
-    visibility: "private",
-  },
-  {
-    id: "tblshop",
-    period: "2025.02 — 2026.04",
-    techStack: ["JavaScript", "HTML/CSS", "Cafe24", "Liquid"],
+    id: "tbl",
+    period: "2025.05 — 2026.04",
+    techStack: [
+      "Next.js 14",
+      "TypeScript",
+      "MUI",
+      "TanStack Query",
+      "Zustand",
+      "i18next",
+      "Cafe24",
+      "Zod",
+    ],
     role: "maintenance",
     visibility: "public",
-    liveUrl: "https://example.com", // TODO: 실제 카페24 쇼핑몰 URL로 교체
+    liveLinks: [
+      { label: "TBLSHOP", url: "https://tblshop.com/" },
+      { label: "Churrrrr (App)", url: "https://play.google.com/store/apps/details?id=com.theblacklabel.fandom&hl=ko" },
+      { label: "DAY OFF (App)", url: "https://play.google.com/store/apps/details?id=com.theblacklabel.fandom.dayoff&hl=ko" },
+    ],
   },
-  {
-    id: "fandum-admin",
-    period: "2025.02 — 2026.04",
-    techStack: ["React", "TypeScript"], // TODO: 실제 기술스택으로 교체
-    role: "maintenance",
-    visibility: "private",
-  },
-  {
-    id: "tbl-sso",
-    period: "2025.02 — 2026.04",
-    techStack: ["React", "TypeScript"], // TODO: 실제 기술스택으로 교체
-    role: "maintenance",
-    visibility: "private",
-  },
+  // 2. 풀스택·모노레포·AWS 인프라 — 현재 진행형, 가장 현대적 스택
   {
     id: "artbonbon",
     period: "2026.04 — 현재",
-    techStack: ["React", "TypeScript", "Next.js"], // TODO: 실제 기술스택으로 교체
+    techStack: [
+      "Next.js 16",
+      "NestJS",
+      "TypeScript",
+      "Tailwind CSS",
+      "Nx",
+      "TanStack Query",
+      "Jotai",
+      "AWS CDK",
+      "Toss Payments",
+    ],
     role: "redesign",
-    visibility: "private",
-    liveUrl: "https://example.com", // TODO: 기존 서비스 URL로 교체
+    visibility: "public",
+    liveUrl: "https://art-bonbon.com/",
     status: "ongoing",
+  },
+  // 3. PG 결제 설계·성능 최적화 — 수치 기반 성과 명확
+  {
+    id: "daesungpappy",
+    period: "2023.12 — 2024.10",
+    techStack: [
+      "Next.js 13",
+      "TypeScript",
+      "TanStack Query",
+      "Zustand",
+      "Sass",
+      "React Hook Form",
+      "MUI",
+      "Recoil",
+    ],
+    role: "new",
+    visibility: "public",
+    liveUrl: "https://www.paffy.co.kr/",
+  },
+  // 4. PixiJS·물리엔진 — 희소성 높은 게임 개발 경험
+  {
+    id: "minigame",
+    period: "2024.12 — 2025.05",
+    techStack: ["TypeScript", "PixiJS", "React", "Vite", "Yarn Workspaces", "Matter.js"],
+    role: "new",
+    visibility: "private",
+  },
+  // 5. 배포 자동화·Azure — DevOps 감각 어필
+  {
+    id: "brandsite",
+    period: "2025.04 — 2025.07",
+    techStack: ["Next.js", "TypeScript", "Azure", "Shell Script"],
+    role: "redesign",
+    visibility: "public",
+    liveUrl: "https://genesisnest.com/ko",
+  },
+  // 6. 4주 프로토타입·이미지 최적화
+  {
+    id: "fang",
+    period: "2024.08 — 2024.11",
+    techStack: ["Next.js", "TypeScript", "SVG Sprite"],
+    role: "new",
+    visibility: "private",
   },
 ];
 
 export const skills = {
   frontend: [
     "React",
+    "Next.js",
     "TypeScript",
     "JavaScript",
-    "Next.js",
-    "Vue.js", // TODO: 실제 기술스택으로 교체/수정
     "HTML5",
     "CSS3",
     "Tailwind CSS",
+    "Sass/SCSS",
+    "MUI (Material UI)",
   ],
   tools: [
     "Git",
     "GitHub",
     "Figma",
     "Vite",
-    "Webpack",
-    // TODO: 실제 사용 툴로 교체/수정
+    "Nx / Turbo",
+    "Azure",
+    "AWS CDK",
   ],
   etc: [
-    "REST API",
-    "Responsive Design",
-    "Cross-browser Compatibility",
-    // TODO: 실제 역량으로 교체/수정
+    "PixiJS",
+    "TanStack Query",
+    "React Hook Form",
+    "i18n",
+    "performance",
+    "deployment",
+    "accessibility",
   ],
 };
 
 export const personalInfo = {
-  name: "YOUR NAME", // TODO: 실제 이름으로 교체
-  nameEn: "Your Name", // TODO: 영문 이름으로 교체
-  github: "https://github.com/yourusername", // TODO: 실제 GitHub URL로 교체
-  email: "your@email.com", // TODO: 실제 이메일로 교체
-  linkedin: "", // TODO: LinkedIn URL (선택)
-  blog: "", // TODO: 블로그/노션 URL (선택)
+  name: "김규연",
+  nameEn: "Claire Kim",
+  github: "https://github.com/HI-CLAIRE",
+  email: "claire3320@gmail.com",
+  linkedin: "",
+  blog: "https://hi-claire.tistory.com/",
 };
+
+export const company = {
+  name: "제네시스네스트",
+  nameEn: "GenesisNest",
+  period: "2023.12 — 현재",
+  periodEn: "Dec 2023 — Present",
+};
+
+export const education = [
+  {
+    institution: "연세대학교 미래캠퍼스",
+    institutionEn: "Yonsei University (Mirae Campus)",
+    major: "화학및의화학과 (전공) · 중어중문학과 (이중전공)",
+    majorEn: "Chemistry & Medical Chemistry (Major) · Chinese Language & Literature (Double Major)",
+    period: "2017.03 — 2022.08",
+  },
+];
+
+export const training = [
+  {
+    name: "삼성 청년 SW 아카데미 8기",
+    nameEn: "Samsung SW Academy For Youth (SSAFY) 8th",
+    detail: "수료",
+    detailEn: "Completed",
+    period: "2022.07 — 2023.06",
+  },
+  {
+    name: "42Seoul",
+    nameEn: "42Seoul",
+    detail: "",
+    detailEn: "",
+    period: "2022.01 — 2022.05",
+  },
+];
