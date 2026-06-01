@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+3년차 프론트엔드 개발자 포트폴리오 사이트입니다.
 
-First, run the development server:
+## 기술 스택
+
+- **Framework**: Next.js 16 (Static Export)
+- **Styling**: Tailwind CSS v4
+- **Animation**: Framer Motion
+- **Language**: TypeScript
+- **Deploy**: GitHub Pages (GitHub Actions)
+
+## 로컬 실행
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 배포
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`main` 브랜치에 push하면 GitHub Actions가 자동으로 빌드 후 GitHub Pages에 배포합니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### GitHub Pages 초기 설정
 
-## Learn More
+1. 저장소 Settings → Pages
+2. Source: **GitHub Actions** 선택
 
-To learn more about Next.js, take a look at the following resources:
+### 저장소 이름에 따른 자동 basePath
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `username.github.io` 저장소 → 루트(`/`) 배포
+- 그 외 저장소(예: `portfolio`) → `/portfolio` 경로로 자동 배포
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 개인 정보 업데이트
 
-## Deploy on Vercel
+`data/projects.ts` 파일에서 아래 항목을 수정하세요.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `personalInfo` — 이름, 이메일, GitHub URL, 한 줄 소개
+- `projects` — 각 프로젝트의 배포 URL, 기술 스택, 핵심 성과
+- `skills` — 보유 기술 목록
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 프로젝트 스크린샷 추가
+
+`public/images/` 폴더에 이미지를 넣고, `data/projects.ts`의 `imageUrl` 필드를 업데이트하세요.
