@@ -108,25 +108,26 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-          style={{ color: "var(--text-4)" }}
-        >
-          <span className="text-xs tracking-widest uppercase">{t.hero.scroll}</span>
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-            className="w-5 h-8 rounded-full flex items-start justify-center pt-1.5"
-            style={{ border: "1px solid var(--border)" }}
-          >
-            <div className="w-1 h-2 rounded-full bg-gradient-to-b from-purple-400 to-transparent" />
-          </motion.div>
-        </motion.div>
       </div>
+
+      {/* Scroll indicator — anchored to section bottom, not inner div */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1.5 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        style={{ color: "var(--text-4)" }}
+      >
+        <span className="text-xs tracking-widest uppercase">{t.hero.scroll}</span>
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+          className="w-5 h-8 rounded-full flex items-start justify-center pt-1.5"
+          style={{ border: "1px solid var(--border)" }}
+        >
+          <div className="w-1 h-2 rounded-full bg-gradient-to-b from-purple-400 to-transparent" />
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

@@ -11,7 +11,7 @@ export const translations = {
     hero: {
       badge: "3년차 프론트엔드 개발자",
       developerTitle: "Frontend Developer",
-      bio: "책임감 있게 완성하고, 팀과 함께 성장하는 프론트엔드 개발자입니다.",
+      bio: "복잡한 결제·인증 플로우를 설계하고 성능 최적화를 통해 서비스 품질을 개선하는 프론트엔드 개발자",
       cta: {
         projects: "프로젝트 보기",
         github: "GitHub",
@@ -23,9 +23,9 @@ export const translations = {
       sectionLabel: "About Me",
       heading: "안녕하세요",
       bio: [
-        "결제 시스템·인증·운영 자동화까지, 맡은 기능을 끝까지 책임지고 완성하는 것을 중요하게 생각합니다.",
-        "신규 개발부터 운영·유지보수, 서비스 개편까지 다양한 성격의 프로젝트를 경험하며 요구사항을 빠르게 파악하고 실행하는 능력을 키워왔습니다. 미니게임 개발에서 커머스 운영, SSO 인증, 서비스 개편까지 — 새로운 도메인과 기술 스택을 빠르게 학습해 즉시 성과를 내왔습니다.",
-        "현재는 아트봉봉 서비스 전면 개편에 참여하며, 더 나은 사용자 경험과 안정적인 아키텍처를 만들기 위해 고민하고 있습니다.",
+        "결제 시스템, 통합회원 인증(SSO), 성능 최적화를 설계하고 운영해 온 3년 차 프론트엔드 개발자입니다. 약 25만 명 규모의 TBL 통합회원 서비스를 안정적으로 운영하며 대규모 사용자 환경에서의 서비스 품질과 안정성을 경험했습니다.",
+        "문제를 발견하면 기다리기보다 먼저 정리하고 공유하며, 기획자·디자이너·서버 개발자와 긴밀하게 협업해 해결 방안을 만들어갑니다.",
+        "현재는 아트봉봉 서비스 전면 개편에 참여하며 더 나은 사용자 경험과 확장 가능한 프론트엔드 구조를 구축하고 있습니다.",
       ],
       githubLabel: "GitHub",
       blogLabel: "Blog",
@@ -150,11 +150,11 @@ export const translations = {
       tbl: {
         title: "더블랙레이블 (TBL)",
         description:
-          "TBLSHOP 커머스, 팬덤앱 어드민(Churrrrr·DAYOFF), TBL SSO 통합회원 등 4개 시스템을 운영·유지보수하며 멤버십 구매 시스템 신규 구축과 글로벌 다국어 대응을 주도했습니다.",
+          "TBLSHOP 커머스, 팬덤앱 어드민(Churrrrr·DAYOFF), TBL SSO 통합회원 등 4개 시스템을 운영·유지보수하며 멤버십 구매 시스템 신규 구축과 글로벌 다국어 대응을 주도했습니다. SSO 통합회원은 약 25만 명(26.05 기준)의 회원을 안정적으로 운영 중입니다.",
         highlights: [
+          "SSO 통합회원 약 25만 명 안정 운영 (Churrrrr 약 11만 명 · DAYOFF 약 15만 명, 26.05 기준) — 4개 시스템 간 인증·멤버십 데이터 연동 설계 및 운영 무장애 유지",
           "cafe24 제약 환경에서 앱 연동형 멤버십 구현 — 4개 시스템(TBLShop·SSO·Churrrrr·DAYOFF) 간 데이터 연동 설계·안정화, MEOVV·ADP 멤버십 성공 오픈",
-          "한·중·일·영 4개 언어 다국어 지원 체계 구축 및 회원가입 디바운싱·전화번호 유효성 등 다수 UX 이슈 발굴·개선",
-          "ADMIN 이벤트 관리·계정 관리 페이지 개발 및 QR 체크인 구현 / 8개 이상 아티스트 페이지 추가·업데이트",
+          "한·중·일·영 4개 언어 다국어 지원 체계 구축 및 회원가입 디바운싱·전화번호 유효성 등 다수 UX 이슈 발굴·개선 / ADMIN 이벤트·계정 관리 페이지 개발 및 QR 체크인 구현",
         ],
       },
       artbonbon: {
@@ -180,7 +180,7 @@ export const translations = {
     hero: {
       badge: "3-Year Frontend Developer",
       developerTitle: "Frontend Developer",
-      bio: "A frontend developer who takes full ownership and grows alongside the team.",
+      bio: "A frontend developer who designs complex payment & auth flows and improves service quality through performance optimization.",
       cta: {
         projects: "View Projects",
         github: "GitHub",
@@ -192,9 +192,9 @@ export const translations = {
       sectionLabel: "About Me",
       heading: "Hello there",
       bio: [
-        "Whether it's payment systems, authentication, or deployment automation — I take full ownership of the features I'm responsible for and see them through to completion.",
-        "Through diverse projects spanning new development, operations, and full redesigns — from mini-game platforms to e-commerce, SSO auth, and service overhauls — I've built the ability to quickly pick up new domains and tech stacks and deliver results immediately.",
-        "I'm currently working on a full redesign of the Artbonbon service, focused on building a better user experience and a more stable architecture.",
+        "I'm a 3-year frontend developer with experience designing and operating payment systems, SSO-based authentication, and performance optimization. I've helped maintain stable service quality for approximately 250,000 members on the TBL integrated membership platform.",
+        "When I spot a problem, I don't wait — I organize the context, share it proactively, and work closely with planners, designers, and backend developers to build solutions together.",
+        "I'm currently participating in a full redesign of the Artbonbon service, working to build a better user experience and a scalable frontend architecture.",
       ],
       githubLabel: "GitHub",
       blogLabel: "Blog",
@@ -319,11 +319,11 @@ export const translations = {
       tbl: {
         title: "THE BLACK LABEL (TBL)",
         description:
-          "Operated and maintained 4 systems — TBLSHOP commerce, fandom app admin (Churrrrr & DAYOFF), and TBL SSO. Led the new membership purchase system build and global multi-language support.",
+          "Operated and maintained 4 systems — TBLSHOP commerce, fandom app admin (Churrrrr & DAYOFF), and TBL SSO. Led the new membership purchase system build and global multi-language support. The SSO integrated membership system currently serves approximately 250,000 members in stable operation (as of May 2026).",
         highlights: [
+          "~250K SSO members in stable operation — Churrrrr ~113K · DAYOFF ~153K (as of May 2026) — designed auth & membership data sync across 4 systems with zero outages",
           "Built app-integrated membership in Cafe24's constrained environment — designed data sync across 4 systems (TBLShop, SSO, Churrrrr, DAYOFF), successfully launched MEOVV & ADP memberships",
-          "Established 4-language (KO/EN/JA/ZH) i18n support and surfaced/resolved multiple UX issues including signup debouncing and phone number validation",
-          "Developed event management & account management pages in ADMIN with QR check-in / Added and updated 8+ artist pages",
+          "Established 4-language (KO/EN/JA/ZH) i18n support and surfaced/resolved multiple UX issues / Developed ADMIN event & account management pages with QR check-in",
         ],
       },
       artbonbon: {

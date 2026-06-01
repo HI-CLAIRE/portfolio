@@ -14,12 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hi-claire.github.io"),
   title: "Claire Kim | Frontend Developer",
   description:
-    "3년차 프론트엔드 개발자 포트폴리오 — React, TypeScript, Next.js를 주력으로 사용자 경험을 만드는 개발자입니다.",
+    "결제·인증·최적화를 설계하고, 팀과 먼저 소통하는 3년차 프론트엔드 개발자 김규연의 포트폴리오입니다.",
   openGraph: {
-    title: "Portfolio | Frontend Developer",
-    description: "3년차 프론트엔드 개발자 포트폴리오",
+    title: "Claire Kim | Frontend Developer",
+    description:
+      "결제·인증·최적화를 설계하고, 팀과 먼저 소통하는 3년차 프론트엔드 개발자 김규연의 포트폴리오입니다.",
     type: "website",
   },
 };
